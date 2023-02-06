@@ -1,5 +1,6 @@
 # QT-DEMO
-QT-DEMO
+QT-DEMO  
+头文件/源文件切换快捷键：**F4**  
 
 这是一份QT实践案例DEMO.
 - demo1:最简桌面  

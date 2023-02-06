@@ -2,6 +2,9 @@
 #define TIMERUN_H
 
 #include <QWidget>
+#include <QTimer>
+#include <QDebug>
+#include <QString>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class timerun; }
@@ -14,8 +17,13 @@ class timerun : public QWidget
 public:
     timerun(QWidget *parent = nullptr);
     ~timerun();
+    QTimer *timer1;
+
 
 private:
     Ui::timerun *ui;
+private slots:
+    void daojishi();
+
 };
 #endif // TIMERUN_H
