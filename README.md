@@ -13,3 +13,5 @@ QT-DEMO
 使用时间库qtime。
 - demo5: 图片轮播  
 图片资源加载，调用QLabel、QPixmap等
+- demo6: 数据库  
+调用sqlite3工具创建数据库。
