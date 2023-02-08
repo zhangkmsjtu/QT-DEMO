@@ -15,3 +15,5 @@ QT-DEMO
 图片资源加载，调用QLabel、QPixmap等
 - demo6: 数据库  
 调用sqlite3工具创建数据库。
+- dem07: 信息管理软件  
+调用qtableview，实现增删改查。
