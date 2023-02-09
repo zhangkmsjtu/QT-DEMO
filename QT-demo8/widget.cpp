@@ -47,6 +47,22 @@ void Widget::paintEvent(QPaintEvent *event)
 
 //    painter.drawText(45,45,"每天步数");
     painter.drawText(12,520,"0");
+//    生成随机数
+    int x1, y1, x2, y2;
+    x1=10;
+    y1=qrand()%400;
+    for(int i=0;i<80;i++){
+        x2=10+5*i;
+        y2=500-qrand()%400;
+
+        painter.drawLine(x1,y1,x2,y2);
+        x1=x2;
+        y1=y2;
+        painter.setPen(QPen(Qt::red,5));
+        painter.drawPoint(x1,y1);
+
+    }
+
 
 
 }
