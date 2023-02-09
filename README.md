@@ -17,3 +17,5 @@ QT-DEMO
 调用sqlite3工具创建数据库。
 - dem07: 信息管理软件  
 调用qtableview，实现增删改查。
+- demo8: 画图  
+绘图案例，调用QPainter。
