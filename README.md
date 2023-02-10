@@ -19,3 +19,8 @@ QT-DEMO
 调用qtableview，实现增删改查。
 - demo8: 画图  
 绘图案例，调用QPainter。
+- demo9: 通讯软件-服务端开发  
+netstat -ano；  
+引用network使用TCP服务
+- demo10: 通讯软件-客户端开发  
+tcp通信
