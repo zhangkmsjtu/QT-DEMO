@@ -2,7 +2,9 @@
 #define WIDGET_H
 
 #include <QWidget>
-#include <server.h>
+#include "server.h"
+#include <QByteArray>
+#include <QTcpSocket>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
@@ -18,9 +20,13 @@ public:
 
 private slots:
     void on_pushButton_clicked();
+    void mygivemsg(QString,int);
+
+    void on_pushButton_2_clicked();
 
 private:
     Ui::Widget *ui;
     Server *server;
+    QTcpSocket *sock;
 };
 #endif // WIDGET_H

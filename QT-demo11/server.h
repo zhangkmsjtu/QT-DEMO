@@ -3,6 +3,9 @@
 
 #include <QObject>
 #include <QTcpServer>
+#include <QTcpSocket>
+#include <QByteArray>
+#include <QString>
 
 class Server : public QTcpServer
 {
@@ -10,7 +13,14 @@ class Server : public QTcpServer
 public:
     Server();
     Server(int port);
+    void incomingConnection(qintptr socketDescriptor);
+    QTcpSocket* getsock();
 private:
+    QTcpSocket *socket;
+private slots:
+    void receiveMessage();
+public: signals:
+    void givemsg(QString,int);
 
 };
 
